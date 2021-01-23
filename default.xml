@@ -8,6 +8,12 @@
            remote="aosp"
            sync-j="4" />
 
+
+  <remote  name="bsaosp-device"
+           fetch="https://github.com/gostoshbs/"/>
+
+  <project path="device/brightsign/bs_generic" name="bsaosp-device" remote="bsaosp-device" revision="master" upstream="master" />
+
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
